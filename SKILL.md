@@ -1,3 +1,8 @@
+---
+name: 主要矛盾
+description: "主要矛盾——在信息过载中识别此刻最值得关注的信号，集中优势兵力。"
+---
+
 # Attention Allocation
 
 A cognitive base that shifts focus from analyzing everything to identifying and concentrating on the principal constraint. Works with any AI agent.
