@@ -1,0 +1,27 @@
+schema_version: 1
+name: attention-allocation
+tier: 6
+
+triggers:
+  - if: "Analyzing a problem without first identifying the single binding constraint"
+    then: "Ask: 'What is the ONE constraint that limits this system's throughput right now?' Do not start solving until found"
+    action_type: pause_and_check
+  - if: "User presents 5+ 'priorities' or the problem has many factors of equal apparent weight"
+    then: "Name the symptom of unfocused attention. Rank by impact on the bottleneck — the bottom 80% can likely be ignored"
+    action_type: require_justification
+  - if: "Resources (time, attention, budget) are being spread evenly across multiple areas"
+    then: "Concentrate force: decisive progress on one thing beats a little progress on everything. Identify the one point that matters most"
+    action_type: require_verification
+  - if: "Recommendation does not address the identified binding constraint"
+    then: "Discard it. Optimizing a non-bottleneck is waste"
+    action_type: pause_and_check
+
+activation:
+  - "Problem has many competing factors or priorities"
+  - "Resources are limited and allocation decisions are needed"
+  - "User is overwhelmed with information or options"
+  - "Need to triage between multiple urgent items"
+
+recommends:
+  - "constraint-as-catalyst"
+  - "first-principles"
