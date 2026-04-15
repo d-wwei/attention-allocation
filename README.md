@@ -1,4 +1,4 @@
-# Attention Allocation | 主要矛盾
+# Attention Allocation | 提纲挈领
 
 A cognitive base that shifts AI agents from analyzing everything to identifying and concentrating on the principal constraint. Works with any LLM agent — Claude, GPT, Gemini, or custom frameworks.
 
